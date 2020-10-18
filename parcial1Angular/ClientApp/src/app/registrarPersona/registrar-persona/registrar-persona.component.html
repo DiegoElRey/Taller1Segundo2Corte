@@ -1,0 +1,112 @@
+<br>
+<br>
+<form name="form" (ngSubmit)="f.form.valid && agregar()" #f="ngForm" novalidate autocomplete="off">
+    <div class="registro">
+        <h1>Registro</h1>
+        <br>
+        <div class="form-group">
+            <label for="id">Identificación</label>
+            <input type="text" class="form-control" name="identificacion"
+                  [(ngModel)]="persona.identificacion" #identificacion="ngModel"
+                  [ngClass]="{ 'is-invalid': f.submitted && identificacion.invalid }" required />
+            <div *ngIf="f.submitted && identificacion.invalid" class="invalid-feedback">
+                <div *ngIf="identificacion.errors.required">La identificación es requerida</div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="id">Nombre</label>
+            <input type="text" class="form-control" name="nombre"
+                  [(ngModel)]="persona.nombre" #nombre="ngModel"
+                  [ngClass]="{ 'is-invalid': f.submitted && nombre.invalid }" required />
+            <div *ngIf="f.submitted && nombre.invalid" class="invalid-feedback">
+                <div *ngIf="nombre.errors.required">El nombre es requerido</div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="id">Apellido</label>
+            <input type="text" class="form-control" name="apellido"
+                  [(ngModel)]="persona.apellido" #apellido="ngModel"
+                  [ngClass]="{ 'is-invalid': f.submitted && apellido.invalid }" required />
+            <div *ngIf="f.submitted && apellido.invalid" class="invalid-feedback">
+                <div *ngIf="apellido.errors.required">El apellido es requerido</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="sexo">Sexo</label>
+            <br>
+            <select class="form-control" name="sexo"
+            [(ngModel)]="persona.sexo" #sexo="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && sexo.invalid }" required >
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+            <div *ngIf="f.submitted && sexo.invalid" class="invalid-feedback">
+                <div *ngIf="sexo.errors.required">El sexo es requerida</div>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="id">Edad</label>
+            <input type="number" class="form-control" name="edad"
+                  [(ngModel)]="persona.edad" #edad="ngModel"
+                  [ngClass]="{ 'is-invalid': f.submitted && edad.invalid }" required />
+            <div *ngIf="f.submitted && edad.invalid" class="invalid-feedback">
+                <div *ngIf="edad.errors.required">El edad es requerida</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="id">Departamento</label>
+            <input type="text" class="form-control" name="departamento"
+                  [(ngModel)]="persona.departamento" #departamento="ngModel"
+                  [ngClass]="{ 'is-invalid': f.submitted && departamento.invalid }" required />
+            <div *ngIf="f.submitted && departamento.invalid" class="invalid-feedback">
+                <div *ngIf="departamento.errors.required">El departamento es requerido</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="id">Ciudad</label>
+            <input type="text" class="form-control" name="ciudad"
+                  [(ngModel)]="persona.ciudad" #ciudad="ngModel"
+                  [ngClass]="{ 'is-invalid': f.submitted && ciudad.invalid }" required />
+            <div *ngIf="f.submitted && ciudad.invalid" class="invalid-feedback">
+                <div *ngIf="ciudad.errors.required">El ciudad es requerida</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="modalidad">Modalidad</label>
+            <br>
+            <select class="form-control" name="modalidad"
+            [(ngModel)]="persona.ModalidadApoyo" #modalidad="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && modalidad.invalid }" required >
+                <option value="Alimentario">Alimentario</option>
+                <option value="Economico">Economico</option>
+            </select>
+            <div *ngIf="f.submitted && modalidad.invalid" class="invalid-feedback">
+                <div *ngIf="modalidad.errors.required">El modalidad es requerida</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="id">Valor del apoyo</label>
+            <input type="number" class="form-control" name="valorApoyoRecibido"
+                  [(ngModel)]="persona.valorApoyoRecibido" #valorApoyoRecibido="ngModel"
+                  [ngClass]="{ 'is-invalid': f.submitted && valorApoyoRecibido.invalid }" required />
+            <div *ngIf="f.submitted && valorApoyoRecibido.invalid" class="invalid-feedback">
+                <div *ngIf="valorApoyoRecibido.errors.required">El valorApoyoRecibido es requerida</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="id">Fecha</label>
+            <input type="date" class="form-control" name="fecha"
+                  [(ngModel)]="persona.fecha" #fecha="ngModel"
+                  [ngClass]="{ 'is-invalid': f.submitted && fecha.invalid }" required />
+            <div *ngIf="f.submitted && fecha.invalid" class="invalid-feedback">
+                <div *ngIf="fecha.errors.required">El fecha es requerida</div>
+            </div>
+        </div>
+        <button type="submit" [disabled]="!f.form.valid"  class="btn btn-primary" >Submit</button>
+    </div>
+</form>
+<br>
+<br>

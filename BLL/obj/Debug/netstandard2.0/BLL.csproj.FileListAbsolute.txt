@@ -1,0 +1,14 @@
+c:\Users\Dasp2\parcial1Dotnet\BLL\bin\Debug\netstandard2.0\BLL.deps.json
+c:\Users\Dasp2\parcial1Dotnet\BLL\bin\Debug\netstandard2.0\BLL.dll
+c:\Users\Dasp2\parcial1Dotnet\BLL\bin\Debug\netstandard2.0\BLL.pdb
+c:\Users\Dasp2\parcial1Dotnet\BLL\bin\Debug\netstandard2.0\DAL.dll
+c:\Users\Dasp2\parcial1Dotnet\BLL\bin\Debug\netstandard2.0\Entity.dll
+c:\Users\Dasp2\parcial1Dotnet\BLL\bin\Debug\netstandard2.0\DAL.pdb
+c:\Users\Dasp2\parcial1Dotnet\BLL\bin\Debug\netstandard2.0\Entity.pdb
+c:\Users\Dasp2\parcial1Dotnet\BLL\obj\Debug\netstandard2.0\BLL.csprojAssemblyReference.cache
+c:\Users\Dasp2\parcial1Dotnet\BLL\obj\Debug\netstandard2.0\BLL.AssemblyInfoInputs.cache
+c:\Users\Dasp2\parcial1Dotnet\BLL\obj\Debug\netstandard2.0\BLL.AssemblyInfo.cs
+c:\Users\Dasp2\parcial1Dotnet\BLL\obj\Debug\netstandard2.0\BLL.csproj.CoreCompileInputs.cache
+c:\Users\Dasp2\parcial1Dotnet\BLL\obj\Debug\netstandard2.0\BLL.csproj.CopyComplete
+c:\Users\Dasp2\parcial1Dotnet\BLL\obj\Debug\netstandard2.0\BLL.dll
+c:\Users\Dasp2\parcial1Dotnet\BLL\obj\Debug\netstandard2.0\BLL.pdb
